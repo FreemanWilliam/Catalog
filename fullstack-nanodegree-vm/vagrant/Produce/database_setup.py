@@ -15,3 +15,5 @@ Base = declarative_base()
 
 engine = create_engine(
 'sqlite:///producemenu.db')
+
+Base.metadata.create_all(engine)
