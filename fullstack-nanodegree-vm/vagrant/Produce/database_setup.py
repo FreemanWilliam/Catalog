@@ -13,6 +13,8 @@ Base = declarative_base()
 
 class Produce(Base):
 
+class ProduceItem(Base):
+
 
 
 engine = create_engine(
