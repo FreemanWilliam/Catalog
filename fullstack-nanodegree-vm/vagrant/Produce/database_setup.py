@@ -11,6 +11,8 @@ from sqlalchemy import create_engine
 
 Base = declarative_base()
 
+class Produce(Base):
+
 
 
 engine = create_engine(
