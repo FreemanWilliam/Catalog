@@ -21,7 +21,7 @@ class ProduceItem(Base):
 	name = Column(String(80), nullable = False)
 	description = Column(String(250))
 	price = Column(String(8))
-	type = Column()
+	type = Column(String(15))
 
 
 
