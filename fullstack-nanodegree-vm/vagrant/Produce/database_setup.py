@@ -18,7 +18,7 @@ class ProduceItem(Base):
 	__tablename__ = 'produce_item'
 	
 	id = Column(Integer, primary_key = True)
-	name = Column()
+	name = Column(String(80))
 
 
 
