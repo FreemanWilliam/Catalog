@@ -23,6 +23,7 @@ class ProduceItem(Base):
 	price = Column(String(8))
 	type = Column(String(15))
 	produce_id = Column(Integer, ForeignKey('produce.id'))
+	produce
 
 
 
