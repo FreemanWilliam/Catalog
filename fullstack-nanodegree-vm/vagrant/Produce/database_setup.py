@@ -14,7 +14,7 @@ Base = declarative_base()
 class Produce(Base):
 	__tablename__ = 'produce'
 	
-	id = Column(Integer)
+	id = Column(Integer, primary_key=True)
 
 class ProduceItem(Base):
 	__tablename__ = 'produce_item'
