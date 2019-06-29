@@ -1,3 +1,3 @@
 import sys
 from sqlalchemy import
-Column, ForeignKey, Integer
+Column, ForeignKey, Integer, String
