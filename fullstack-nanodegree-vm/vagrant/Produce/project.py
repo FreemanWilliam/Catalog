@@ -15,7 +15,7 @@ session = DBSession()
 @app.route('/')
 @app.route('/produce')
 def Produce():
-	produce
+	produce = session.query(Produce).first()
 	return "This is a new test!!"
 		   
 
