@@ -15,8 +15,29 @@ session = DBSession()
 @app.route('/')
 @app.route('/produce')
 def Produce():
-	produce = session.query(Produce).first()
-	return "This is a new test!!"
+	
+	test = session.query(Produce).all()
+	s = ''
+	
+	for i in test:		
+		s+='</br>'
+		s+=str(i.id)
+		'''
+		s+='</br>'
+		s+=str(i.id)
+		s+='</br>'
+		s+=str(i.description)
+		s+='</br>'
+		s+=str(i.price)
+		s+='</br>'
+		s+=str(i.type)
+		s+='</br>'
+		s+=str(i.produce_id)
+			'''
+	output = s
+	
+	
+	return output
 		   
 
 
